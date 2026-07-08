@@ -20,12 +20,11 @@ export default function Header() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
-  // Helper: active link style – darker background, no border
+  // Desktop active link style
   const getDesktopLinkClass = (href: string) => {
     const isActive = pathname === href;
     const base = "transition-colors px-3 py-2 rounded-full";
     if (isActive) {
-      // Active: solid darker background
       return scrolled
         ? "bg-primary-dark text-white " + base
         : "bg-white/20 text-white " + base;
@@ -35,12 +34,11 @@ export default function Header() {
       : "text-white hover:text-gray-200 " + base;
   };
 
-  // Helper for "Earn with Us" pill – ensure text is readable
+  // Desktop "Earn with Us" pill
   const getEarnWithUsClass = () => {
     const isActive = pathname === "/earn-with-us";
     const base = "border-2 rounded-full px-4 py-2 font-medium transition";
     if (isActive) {
-      // Active: solid white background with primary text (visible)
       return "bg-white text-primary border-white " + base;
     }
     return scrolled
@@ -48,6 +46,7 @@ export default function Header() {
       : "border-white text-white hover:bg-white hover:text-primary " + base;
   };
 
+  // Mobile link class
   const getMobileLinkClass = (href: string) => {
     const isActive = pathname === href;
     return isActive
@@ -85,17 +84,23 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Mobile controls: Earn with Us button + Hamburger */}
+        {/* Mobile controls – now dynamic colours */}
         <div className="flex md:hidden items-center space-x-3">
           <Link
             href="/earn-with-us"
-            className="border-2 border-white text-white rounded-full px-3 py-1.5 text-sm font-medium"
+            className={`border-2 rounded-full px-3 py-1.5 text-sm font-medium transition ${
+              scrolled
+                ? "border-primary text-primary"
+                : "border-white text-white"
+            }`}
           >
             Earn with Us
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-white focus:outline-none"
+            className={`focus:outline-none ${
+              scrolled ? "text-primary" : "text-white"
+            }`}
             aria-label="Toggle menu"
           >
             {/* Hamburger icon */}
