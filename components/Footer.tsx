@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="flex items-center mb-4">
             <Image
               src="/logowhite.png"
-              alt="Tbash Global Ventures"
+              alt="Tbash Global Limited"
               width={150}
               height={50}
               className="h-10 w-auto"
             />
           </div>
           <p className="text-sm leading-relaxed text-gray-400 text-justify">
-            At Tbash Global Ventures, we are committed to transforming real
+            At Tbash Global Limited, we are committed to transforming real
             estate aspirations into lasting realities. Through integrity,
             innovation, and exceptional service, we provide quality property
             solutions that deliver value, inspire confidence, and create
@@ -173,7 +173,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Tbash Global Ventures. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Tbash Global Limited. All rights reserved.</p>
       </div>
     </footer>
   );

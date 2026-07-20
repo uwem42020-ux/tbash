@@ -65,7 +65,7 @@ export default function EarnWithUsPage() {
                 Refer Properties. Earn Commissions.
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Become a <strong>Tbash Global Ventures Referral Partner</strong>{" "}
+                Become a <strong>Tbash Global Limited Referral Partner</strong>{" "}
                 and earn attractive commissions by connecting clients with our
                 premium real estate opportunities. Whether you're a student,
                 entrepreneur, professional, content creator, or simply someone
@@ -278,7 +278,7 @@ export default function EarnWithUsPage() {
                   </h4>
                   <p className="text-sm text-gray-500 mb-4">
                     If you were introduced by a member of the Tbash Global
-                    Ventures team, kindly provide their details below.
+                    Limited team, kindly provide their details below.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
@@ -349,10 +349,10 @@ export default function EarnWithUsPage() {
             {/* About */}
             <div className="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-8">
               <h3 className="text-xl font-semibold text-primary mb-4">
-                About Tbash Global Ventures
+                About Tbash Global Limited
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                At <strong>Tbash Global Ventures</strong>, we are committed to
+                At <strong>Tbash Global Limited</strong>, we are committed to
                 helping individuals, families, and investors achieve their real
                 estate goals through trusted property solutions, exceptional
                 customer service, and rewarding investment opportunities. We
@@ -370,7 +370,7 @@ export default function EarnWithUsPage() {
               <p className="text-gray-600">
                 Register today and become a valued{" "}
                 <strong className="text-primary">
-                  Tbash Global Ventures Referral Partner.
+                  Tbash Global Limited Referral Partner.
                 </strong>
               </p>
             </div>

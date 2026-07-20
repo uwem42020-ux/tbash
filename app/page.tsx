@@ -337,7 +337,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/tbashad.jpeg"
-                  alt="Tbash Global Ventures story"
+                  alt="Tbash Global Limited story"
                   width={800}
                   height={600}
                   className="object-cover w-full h-auto"
@@ -354,7 +354,7 @@ export default function Home() {
               <div className="text-gray-700 space-y-4 leading-relaxed text-justify">
                 <p>
                   Founded with a vision to redefine excellence in the real
-                  estate industry, <strong>Tbash Global Ventures</strong> was
+                  estate industry, <strong>Tbash Global Limited</strong> was
                   established to provide reliable, innovative, and value-driven
                   property solutions. From the very beginning, our focus has
                   been on helping individuals, families, and investors achieve
@@ -370,7 +370,7 @@ export default function Home() {
                   create long-term value.
                 </p>
                 <p>
-                  At Tbash Global Ventures, we believe that real estate is more
+                  At Tbash Global Limited, we believe that real estate is more
                   than buying and selling properties—it is about creating
                   opportunities, transforming communities, and helping people
                   build a secure future. Every project we undertake reflects our
@@ -383,7 +383,7 @@ export default function Home() {
                   fostering lasting relationships, and empowering our clients to
                   make confident property investment decisions. With a strong
                   foundation and a forward-thinking vision, Tbash Global
-                  Ventures is committed to shaping the future of real estate,
+                  Limited is committed to shaping the future of real estate,
                   one property at a time.
                 </p>
               </div>
