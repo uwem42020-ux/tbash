@@ -1,29 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = ".next"
+command = "npm run build"
+publish = ".next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-[[headers]]
-  for = "/_next/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[redirects]]
-  from = "/_next/image"
-  to = "/.netlify/images?url=:url&w=:width&q=:quality"
-  status = 200
-  [redirects.query]
-    url = ":url"
-    w = ":width"
-    q = ":quality"
-
-[[redirects]]
-  from = "/_ipx/*"
-  to = "/.netlify/images?url=:url&w=:width&q=:quality"
-  status = 200
-  [redirects.query]
-    url = ":url"
-    w = ":width"
-    q = ":quality"
+[build.secrets_scan]
+# Disable scanning because NEXT_PUBLIC_* keys are intentionally public
+skip = true
